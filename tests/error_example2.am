@@ -1,0 +1,12 @@
+
+
+
+  mov #-32 , W
+
+  cmp r4 , S.1
+
+.entry same
+.extern same
+  
+.entry one
+.entry one
