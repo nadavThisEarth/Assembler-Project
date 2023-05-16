@@ -4,17 +4,17 @@ A collaboration between a fellow student (Aviv Itzhak) and myself (Nadav Kopit),
 It had been written in ANSI C  (C 90) , and compiled on UBUNTU 20.04  .
 
 ## Purpose:
-The program simulates an assembler. It recieves custom-made assembly language input files (with .as extension) and outputs 32-based alphabet code files (with .ob ,  .ext, .ent extensions)
+The program simulates an assembler. It receives custom-made assembly language input files (with .as extension) and outputs 32-based alphabet code files (with .ob ,  .ext, .ent extensions)
 which represent commands and data-storage instructions found in input files.
 
 ## Procedure:
-***At first*** , 'macros' in the input files are handled. For this project's purposes, a macro **definition**  is essentially a block of assembly code lines in an input file. It strats with the word "macro"
+***At first*** , 'macros' in the input files are handled. For this project's purposes, a macro **definition**  is essentially a block of assembly code lines in an input file. It starts with the word "macro"
 and ends with "endmacro".
 A macro name mention is an execution of that same macro.
 Handling of macros is done in **"preprocessor.c"** (***written by Aviv***) and consists of spreading a macro block instead of every corresponding macro name-mention , 
 and later deleting the macro definitions. All of which is done in a new file with same name (with extension ".am")  which is afterward sent to the Passes Manager for further processing.
 
-***Passes Manager***  ( ***written by Nadav in "passes_manager.c"*** ) initiates variables **symbol table** and **memory images** and runs 2 sub-procedures (namely - **"passes"**)  on the ".am" file it recieves.   
+***Passes Manager***  ( ***written by Nadav in "passes_manager.c"*** ) initiates variables **symbol table** and **memory images** and runs 2 sub-procedures (namely - **"passes"**)  on the ".am" file it receives.   
 
 Symbol table ( ***written by Nadav in "symbolTable.c"*** )  is a linked list which eventually holds all symbols (labels) int the ".am" file.
 Memory images ( ***written by Nadav in "image.c"*** ) are dynamically-allocated arrays of strings which in the end contain the 10-bit representation of lines in ".am" file, according to rules set by the assignment.
