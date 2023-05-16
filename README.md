@@ -16,7 +16,8 @@ and later deleting the macro definitions. All of which is done in a new file wit
 
 ***Passes Manager***  ( ***written by Nadav in "passes_manager.c"*** ) initiates variables **symbol table** and **memory images** and runs 2 sub-procedures (namely - **"passes"**)  on the ".am" file it receives.   
 
-Symbol table ( ***written by Nadav in "symbolTable.c"*** )  is a linked list which eventually holds all symbols (labels) int the ".am" file.
+Symbol table ( ***written by Nadav in "symbolTable.c"*** )  is a linked list which eventually holds all symbols (labels) in the ".am" file.
+
 Memory images ( ***written by Nadav in "image.c"*** ) are dynamically-allocated arrays of strings which in the end contain the 10-bit representation of lines in ".am" file, according to rules set by the assignment.
 
 ***First Pass*** ( ***written by Nadav in "first_pass.c"*** ) processes the ".am" file and checks legality of each line.  In case of an error at a specific line, it will printed out to the screen, mentioning line number of occurrence.
