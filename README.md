@@ -1,5 +1,5 @@
 # Assembler-Project
-A colaboration between a fellow student (Aviv Itzhak) and myself (Nadav Kopit), this project was a university (Open University of Israel) heavyweight assignment,
+A collaboration between a fellow student (Aviv Itzhak) and myself (Nadav Kopit), this project was a university (Open University of Israel) heavyweight assignment,
  for the course ***System Programming Lab*** during summer 2022.
 It had been written in ANSI C  (C 90) , and compiled on UBUNTU 20.04  .
 
